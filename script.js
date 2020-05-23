@@ -29,8 +29,8 @@ function passwordLength(e) {
 // Write password to the #password input
 function writePassword(e) {
   e.preventDefault();
-  var characterNum = numberInput.value;
-  if (!(Number.isInteger(characterNum) || characterNum >= 8 || characterNum <= 128)) characterNum = 8;
+  var characterNum = Number(numberInput.value);
+  if (!(Number.isInteger(characterNum) && characterNum >= 8 && characterNum <= 128)) characterNum = 8;
   var upperCase = upperCaseBox.checked;
   var numbers = numbersBox.checked;
   var symbols = symbolsBox.checked;
