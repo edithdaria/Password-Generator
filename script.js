@@ -23,14 +23,14 @@ numberInput.addEventListener("input", passwordLength);
 
 function passwordLength(e) {
   var value = e.target.value;
-  numbersInput.value = value;
+  numberInput.value = value;
 }
 
 // Write password to the #password input
 function writePassword(e) {
   e.preventDefault();
   var characterNum = numberInput.value;
-  if (!(Number.isInteger(characterNum) && characterNum >= 8 && characterNum <= 128)) characterNum = 8;
+  if (!(Number.isInteger(characterNum) || characterNum >= 8 || characterNum <= 128)) characterNum = 8;
   var upperCase = upperCaseBox.checked;
   var numbers = numbersBox.checked;
   var symbols = symbolsBox.checked;
