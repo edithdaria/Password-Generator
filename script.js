@@ -48,7 +48,6 @@ function generatePassword(characterNum, numbers, upperCase, symbols) {
 
     var passwordChars =[];
     //loop for all possible number of characters for password
-    //To-Do - check if number is entered
     for (var i = 0; i < characterNum; i++) {
         var char = charCodes[Math.floor(Math.random() * charCodes.length)];
         passwordChars.push(String.fromCharCode(char));
