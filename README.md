@@ -10,9 +10,7 @@ The methodology used to generate password is the following:
 
 3) then a for loop is run to pick AT RANDOM an index position fromCharCode() list to use in the password
 
-Default settings: By default the password will be:
-    a. 8 characters long
-    b. all lowercase letters
+Default settings: By default the password will be 8 characters long and all lowercase letters
 
 If the user enters a non numberic number password length, we would 
 still generate a password that is 8 characters long.
