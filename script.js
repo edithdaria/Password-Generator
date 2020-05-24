@@ -1,4 +1,3 @@
-
 // Assignment Code
 var form = document.querySelector("#passwordGeneratorForm");
 var numberInput = document.querySelector("#passwordLength")
@@ -15,10 +14,8 @@ var numberChars = arrayASCII(48, 57);
 var symbolChars = arrayASCII(33, 47).concat(arrayASCII(58, 64)).concat(arrayASCII(91, 96)).concat(arrayASCII(123, 126));
 
 // Add event listener to generate button
-
-form.addEventListener("submit", writePassword);
-
 //generateBtn.addEventListener("submit", writePassword);
+form.addEventListener("submit", writePassword);
 numberInput.addEventListener("input", passwordLength);
 
 function passwordLength(e) {
